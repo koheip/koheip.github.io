@@ -1,88 +1,168 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
-    <title>KoheiMatsunobuのポートフォリオ</title>
-  </head>
-  <body>
-    <h1>KoheiMatsunobu</h1>
-　　<img src="証明写真.png">
-    
-    <h2>About</h2>
-    <p>
-      楽しいWebページを作ることが好きです。<br>
-      どんなことができる、したいのか。
-    </p>
+<html lang="ja" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>松延 弘平 | ポートフォリオ</title>
+<meta name="description" content="松延 弘平 (Kohei Matsunobe) — ZEN大学 知能情報 2年。AIエンジニア・ソフトウェアエンジニア志望。">
+<meta property="og:title" content="松延 弘平 | Kohei Matsunobe">
+<meta property="og:description" content="AI・ソフトウェアエンジニア志望。つくって、公開して、学ぶ。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d0a0b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛩️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<div class="bg-orbs"><i></i><i></i><i></i></div><div class="grain"></div>
 
-    <h3>Profile</h3>
-    <ul>
-      <li>Kohei Matsunobu</li>
-      <li>山口県</li>
-      <li>Web 開発</li>
-    </ul>
+<nav><div class="wrap">
+  <a class="logo" href="#top">KOHEI<span>.</span>M ⛩</a>
+  <ul>
+    <li><a href="#about" data-ja="自己紹介" data-en="About">自己紹介</a></li>
+    <li><a href="#projects" data-ja="作品" data-en="Projects">作品</a></li>
+    <li><a href="#skills" data-ja="スキル" data-en="Skills">スキル</a></li>
+    <li><a href="#contact" data-ja="リンク" data-en="Contact">リンク</a></li>
+  </ul>
+  <div class="tools"><button class="tbtn" id="lang" aria-label="Language">EN</button><button class="tbtn" id="theme" aria-label="Theme">☾ DARK</button></div>
+</div></nav>
 
-    <h3>Skills</h3>
-    <table>
-      <tr>
-        <th>OS</th>
-        <td>Windows, Ubuntu など</td>
-      </tr>
-      <tr>
-        <th>Engine, Frameworks</th>
-        <td>Node.js, Express など</td>
-      </tr>
-      <tr>
-        <th>Tool, MiddleWare</th>
-        <td>Git, GitHub,PostgreSQL など</td>
-      </tr>
-      <tr>
-        <th>資格・免許</th>
-        <td></td>
-      </tr>
-    </table>
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <div class="eyebrow rv" data-ja="Portfolio — AI & Software" data-en="Portfolio — AI & Software">Portfolio — AI &amp; Software</div>
+    <h1 class="rv d1">松延 弘平<span class="rom">KOHEI MATSUNOBE</span></h1>
+    <p class="role rv d2"><em data-ja="AIエンジニア・ソフトウェアエンジニア志望" data-en="Aspiring AI &amp; Software Engineer">AIエンジニア・ソフトウェアエンジニア志望</em></p>
+    <p class="lead rv d2" data-ja="ZEN大学 知能情報 2年。機械学習からスマホアプリ、Webアプリまで、小さくても動くものをつくって公開しながら学んでいます。" data-en="Second-year student at ZEN University (online), studying intelligent informatics. I learn by building and shipping small but working things — from machine learning to mobile and web apps.">ZEN大学 知能情報 2年。機械学習からスマホアプリ、Webアプリまで、小さくても動くものをつくって公開しながら学んでいます。</p>
+    <div class="cta rv d3">
+      <a class="btn primary" href="#projects" data-ja="作品を見る →" data-en="View projects →">作品を見る →</a>
+      <a class="btn" href="https://github.com/koheip" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://huggingface.co/koheip" target="_blank" rel="noopener">🤗 Hugging Face ↗</a>
+    </div>
+  </div>
+  <div class="hero-art rv d2" aria-hidden="true">
+    <svg viewBox="0 0 400 400">
+      <circle class="sun" cx="200" cy="170" r="105"/>
+      <g class="torii">
+        <path class="fill-in" d="M30 95 Q200 125 370 95 L378 70 Q200 98 22 70 Z"/>
+        <path d="M52 128 H348"/>
+        <path d="M95 112 V350"/><path d="M305 112 V350"/>
+        <path d="M200 112 V128"/>
+        <path d="M70 350 H120"/><path d="M280 350 H330"/>
+      </g>
+    </svg>
+  </div>
+  <div class="scroll">SCROLL</div>
+</div></header>
 
-    <h3>Works</h3>
-    <p>アピールできる活動内容を書きましょう。</p>
-    <ul>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="https://qiita.com/">Qiita</a></li>
-      <li><a href="https://zenn.dev/">Zenn</a></li>
-      <li>
-        作った作品
-        <ul>
-          <li><a href="https://example.com/">作品 1</a></li>
-          <li><a href="https://example.com/">作品 2</a></li>
-        </ul>
-      </li>
-    </ul>
+<section id="about"><div class="wrap">
+  <div class="sec-head rv"><div class="sec-no">01</div><h2 data-ja="自己紹介<small>About</small>" data-en="About<small>自己紹介</small>">自己紹介<small>About</small></h2></div>
+  <div class="about">
+    <div class="rv">
+      <p data-ja="<strong>松延 弘平</strong>です。山口県に住みながら、オンライン通信制のZEN大学で知能情報を学んでいます。" data-en="I'm <strong>Kohei Matsunobe</strong>. I live in Yamaguchi, Japan, and study intelligent informatics at ZEN University, a fully online university."><strong>松延 弘平</strong>です。山口県に住みながら、オンライン通信制のZEN大学で知能情報を学んでいます。</p>
+      <p data-ja="機械学習・深層学習の授業で学んだことを、実際に動くものにして確かめるのが好きです。PyTorchで日本語の小さなGPTをゼロから実装したり、App Storeで公開するiOSアプリや、Webアプリをつくったりしています。" data-en="I like to test what I learn in machine-learning and deep-learning courses by turning it into something that actually runs: a small Japanese GPT written from scratch in PyTorch, an iOS app on the App Store, and web apps.">機械学習・深層学習の授業で学んだことを、実際に動くものにして確かめるのが好きです。PyTorchで日本語の小さなGPTをゼロから実装したり、App Storeで公開するiOSアプリや、Webアプリをつくったりしています。</p>
+      <p data-ja="作ったソフトウェアには、神道にちなんだ名前をつけています。<strong>カミ</strong>めぐ、<strong>ヒフミ</strong>、<strong>コトシロ</strong>…。名前に意味があると、愛着を持って育てられます。" data-en="I give my software names drawn from Shinto — <strong>Kami</strong>-megu, <strong>Hifumi</strong>, <strong>Kotoshiro</strong>… A name with meaning makes a project easier to care for.">作ったソフトウェアには、神道にちなんだ名前をつけています。<strong>カミ</strong>めぐ、<strong>ヒフミ</strong>、<strong>コトシロ</strong>…。名前に意味があると、愛着を持って育てられます。</p>
+    </div>
+    <dl class="facts glass rv d1">
+      <div class="fact"><dt data-ja="学び" data-en="Study">学び</dt><dd data-ja="ZEN大学 知能情報 2年（2025年入学）" data-en="ZEN University — Intelligent Informatics, 2nd year (enrolled 2025)">ZEN大学 知能情報 2年（2025年入学）</dd></div>
+      <div class="fact"><dt data-ja="拠点" data-en="Base">拠点</dt><dd data-ja="山口県（日本）" data-en="Yamaguchi, Japan">山口県（日本）</dd></div>
+      <div class="fact"><dt data-ja="働き方" data-en="Work style">働き方</dt><dd data-ja="オンライン学習のため、リモート勤務・海外・移住にも対応できます" data-en="Studying online, so I'm open to remote work, working abroad, and relocation">オンライン学習のため、リモート勤務・海外・移住にも対応できます</dd></div>
+      <div class="fact"><dt data-ja="活動" data-en="Activity">活動</dt><dd data-ja="Kaggle に参加／個人開発をGitHubとHugging Faceで公開" data-en="Participating in Kaggle · Publishing personal projects on GitHub and Hugging Face">Kaggle に参加／個人開発をGitHubとHugging Faceで公開</dd></div>
+    </dl>
+  </div>
+</div></section>
 
-    <h3>Contact</h3>
-    <p>連絡先や SNS のアカウントを書きましょう。</p>
-    <ul>
-      <li><a href="mailto:name@example.com">Mail</a></li>
-      <li><a href="https://twitter.com/n_yobikou">X(旧 Twitter)</a></li>
-      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-    </ul>
+<section id="projects"><div class="wrap">
+  <div class="sec-head rv"><div class="sec-no">02</div><h2 data-ja="作品<small>Projects</small>" data-en="Projects<small>作品</small>">作品<small>Projects</small></h2></div>
+  <div class="projects">
 
-    <h3>History</h3>
-    <p>学歴、職歴、アルバイト、インターン経験など。</p>
-    <table>
-      <tr>
-        <th>2018 年</th>
-        <td> <a href="https://nnn.ed.jp/">慶進高校</a> 卒業</td>
-      </tr>
-      <tr>
-        <th>20XX 年</th>
-        <td>表彰、受賞歴、メディア掲載記事などあれば</td>
-      </tr>
-    </table>
+    <article class="card glass hero-card rv">
+      <div class="idx"><span>01 / MACHINE LEARNING</span><span class="badge" data-ja="公開中" data-en="PUBLISHED">公開中</span></div>
+      <h3>mini-gpt-ja</h3>
+      <div class="sub" data-ja="ゼロから実装した日本語ミニGPT" data-en="A Japanese mini GPT, built from scratch">ゼロから実装した日本語ミニGPT</div>
+      <p data-ja="PyTorchだけで実装した、約90万パラメータの日本語 Decoder-only Transformer。文字単位トークナイザー、Causal Self-Attention、会話チューニングまで自分で書きました。ブラウザ上のデモで会話できます。" data-en="A ~0.9M-parameter Japanese decoder-only Transformer implemented in plain PyTorch — character-level tokenizer, causal self-attention and conversational tuning, all written myself. You can chat with it in the browser demo.">PyTorchだけで実装した、約90万パラメータの日本語 Decoder-only Transformer。文字単位トークナイザー、Causal Self-Attention、会話チューニングまで自分で書きました。ブラウザ上のデモで会話できます。</p>
+      <div class="chips"><span class="chip">PyTorch</span><span class="chip">Transformer</span><span class="chip">Python</span><span class="chip">Hugging Face</span></div>
+      <div class="links"><a href="https://huggingface.co/spaces/koheip/mini-gpt-ja-demo" target="_blank" rel="noopener" data-ja="デモを試す" data-en="Try the demo">デモを試す</a><a href="https://huggingface.co/koheip/mini-gpt-ja" target="_blank" rel="noopener">Model</a><a href="https://github.com/koheip/mini-llm" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
 
-    <h3>好きな動画</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y7NQiNER6r4?si=dx0AomLJjliwp6lF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <article class="card glass wide rv d1">
+      <div class="idx"><span>02 / MOBILE</span><span class="badge" data-ja="App Store 公開中" data-en="ON THE APP STORE">App Store 公開中</span></div>
+      <h3>カミめぐ</h3>
+      <div class="sub" data-ja="御朱印帳アプリ（iOS）" data-en="Goshuin (shrine stamp) book app — iOS">御朱印帳アプリ（iOS）</div>
+      <p data-ja="神社の御朱印を記録・見返せるiOSアプリ。v1.1.0 では、API Gateway → Lambda → Gemini の構成で、AIによる神社紹介文を追加しました。" data-en="An iOS app to record and revisit shrine goshuin stamps. v1.1.0 adds AI-generated shrine introductions through API Gateway → Lambda → Gemini.">神社の御朱印を記録・見返せるiOSアプリ。v1.1.0 では、API Gateway → Lambda → Gemini の構成で、AIによる神社紹介文を追加しました。</p>
+      <div class="chips"><span class="chip">Expo</span><span class="chip">React Native</span><span class="chip">TypeScript</span><span class="chip">SQLite</span><span class="chip">AWS Lambda</span><span class="chip">Gemini</span></div>
+      <div class="links"><a href="https://apps.apple.com/jp/app/カミめぐ/id6821107881" target="_blank" rel="noopener">App Store</a></div>
+    </article>
 
-    <iframe src="https://openprocessing.org/sketch/2959038/embed/" width="600" height="600"></iframe> 
-   
-  </body>
+    <article class="card glass wide rv d2">
+      <div class="idx"><span>03 / WEB APP</span><span class="badge" data-ja="公開中" data-en="LIVE">公開中</span></div>
+      <h3>ヒフミ</h3>
+      <div class="sub" data-ja="Excel集計レポートの自動化Webアプリ" data-en="Excel aggregation & report automation web app">Excel集計レポートの自動化Webアプリ</div>
+      <p data-ja="Excelの集計とレポート作成を自動化するサーバーサイドのWebアプリ。FastAPIで作り、Renderで公開しています。" data-en="A server-side web app that automates Excel aggregation and report generation. Built with FastAPI and hosted on Render.">Excelの集計とレポート作成を自動化するサーバーサイドのWebアプリ。FastAPIで作り、Renderで公開しています。</p>
+      <div class="chips"><span class="chip">FastAPI</span><span class="chip">Python</span><span class="chip">Excel</span><span class="chip">Render</span></div>
+      <div class="links"><a href="https://hifumi.onrender.com" target="_blank" rel="noopener">Live</a><a href="https://github.com/koheip/hifumi" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+
+    <article class="card glass rv">
+      <div class="idx"><span>04 / RAG</span></div>
+      <h3>rag-doc-qa</h3>
+      <div class="sub" data-ja="日本語PDFに質問できるRAGチャット" data-en="Japanese PDF Q&A (RAG)">日本語PDFに質問できるRAGチャット</div>
+      <p data-ja="multilingual-e5 で埋め込み、FAISS で検索し、Gemini で回答を生成します。" data-en="Embeds with multilingual-e5, retrieves with FAISS, and answers with Gemini.">multilingual-e5 で埋め込み、FAISS で検索し、Gemini で回答を生成します。</p>
+      <div class="chips"><span class="chip">Streamlit</span><span class="chip">FAISS</span><span class="chip">Gemini</span></div>
+      <div class="links"><a href="https://github.com/koheip/rag-doc-qa" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+
+    <article class="card glass rv d1">
+      <div class="idx"><span>05 / EXTENSION</span><span class="badge wip" data-ja="開発中" data-en="IN PROGRESS">開発中</span></div>
+      <h3>コトシロ</h3>
+      <div class="sub" data-ja="LinkedIn プロフィール翻訳 Chrome拡張" data-en="LinkedIn profile translation — Chrome extension">LinkedIn プロフィール翻訳 Chrome拡張</div>
+      <p data-ja="LinkedInのプロフィールを翻訳するChrome拡張機能を開発中です。" data-en="A Chrome extension that translates LinkedIn profiles — currently under development.">LinkedInのプロフィールを翻訳するChrome拡張機能を開発中です。</p>
+      <div class="chips"><span class="chip">JavaScript</span><span class="chip">Chrome Extension</span></div>
+    </article>
+
+    <article class="card glass rv d2">
+      <div class="idx"><span>06 / COMPETITION</span></div>
+      <h3>Kaggle</h3>
+      <div class="sub" data-ja="データ分析コンペに参加" data-en="Data science competitions">データ分析コンペに参加</div>
+      <p data-ja="機械学習の腕試しとして、Kaggleのコンペに参加しています。" data-en="I take part in Kaggle competitions to put my machine-learning skills to the test.">機械学習の腕試しとして、Kaggleのコンペに参加しています。</p>
+      <div class="chips"><span class="chip">Python</span><span class="chip">ML</span></div>
+    </article>
+
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-head rv"><div class="sec-no">03</div><h2 data-ja="スキル<small>Skills</small>" data-en="Skills<small>スキル</small>">スキル<small>Skills</small></h2></div>
+  <div class="skills">
+    <div class="skill glass rv"><h3>Languages</h3><div class="ja" data-ja="言語" data-en="Programming languages">言語</div>
+      <div class="chips"><span class="chip pop">Python</span><span class="chip pop">TypeScript</span><span class="chip pop">JavaScript</span><span class="chip pop">Java</span><span class="chip pop">SQL</span><span class="chip pop">Solidity</span><span class="chip pop">HTML / CSS</span></div></div>
+    <div class="skill glass rv d1"><h3>Frameworks &amp; Cloud</h3><div class="ja" data-ja="開発・クラウド" data-en="Frameworks &amp; cloud">開発・クラウド</div>
+      <div class="chips"><span class="chip pop">React Native</span><span class="chip pop">Expo</span><span class="chip pop">FastAPI</span><span class="chip pop">AWS API Gateway</span><span class="chip pop">AWS Lambda</span><span class="chip pop">SQLite</span></div></div>
+    <div class="skill glass rv d2"><h3>AI / ML</h3><div class="ja" data-ja="機械学習" data-en="Machine learning">機械学習</div>
+      <div class="chips"><span class="chip pop">PyTorch</span><span class="chip pop">Transformer</span><span class="chip pop">RAG</span><span class="chip pop">FAISS</span><span class="chip pop" data-ja="機械学習・深層学習（大学で履修）" data-en="ML / DL coursework">機械学習・深層学習（大学で履修）</span></div></div>
+  </div>
+  <div class="now glass rv" style="margin-top:20px">
+    <div><b>NOW</b><span data-ja="ZEN大学で機械学習・深層学習を学習中" data-en="Studying ML &amp; deep learning at ZEN University">ZEN大学で機械学習・深層学習を学習中</span></div>
+    <div><b>BUILDING</b><span data-ja="コトシロ（Chrome拡張）の開発" data-en="Building Kotoshiro (Chrome extension)">コトシロ（Chrome拡張）の開発</span></div>
+    <div><b>GOAL</b><span data-ja="AI・ソフトウェアエンジニアとして、リモート／海外で働くこと" data-en="Work as an AI / software engineer, remotely or abroad">AI・ソフトウェアエンジニアとして、リモート／海外で働くこと</span></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <div class="sec-head rv"><div class="sec-no">04</div><h2 data-ja="リンク<small>Contact</small>" data-en="Contact<small>リンク</small>">リンク<small>Contact</small></h2></div>
+  <div class="contact glass rv">
+    <p data-ja="お仕事やインターンのご相談、コンペ・開発の交流など、お気軽にご連絡ください。連絡はLinkedInが確実です。" data-en="Happy to talk about work, internships, competitions or building things together. LinkedIn is the most reliable way to reach me.">お仕事やインターンのご相談、コンペ・開発の交流など、お気軽にご連絡ください。連絡はLinkedInが確実です。</p>
+    <div class="socials">
+      <a class="social" href="https://github.com/koheip" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.34.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg><div>GitHub<small>github.com/koheip</small></div></a>
+      <a class="social" href="https://huggingface.co/koheip" target="_blank" rel="noopener"><span style="font-size:22px">🤗</span><div>Hugging Face<small>huggingface.co/koheip</small></div></a>
+      <a class="social" href="https://www.linkedin.com/in/kohei-matsunobe/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><div>LinkedIn<small>kohei-matsunobe</small></div></a>
+    </div>
+  </div>
+</div></section>
+
+<footer><span class="t">⛩️</span>© 2026 Kohei Matsunobe · Yamaguchi, Japan</footer>
+<script src="script.js"></script>
+</body>
 </html>
